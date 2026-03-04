@@ -1,0 +1,62 @@
+@use "sass:color";
+@use "base" as *;
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.btn-primary {
+    @extend .btn;
+    background-color: $color-light-accent;
+    color: $color-light-text;
+
+    &:hover {
+        background-color: color.scale($color-light-accent, $lightness: -15%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $color-dark-accent;
+        color: $color-dark-text;
+
+        &:hover {
+            background-color: color.scale($color-dark-accent, $lightness: 15%);
+        }
+    }
+}
+
+.btn-outline {
+    @extend .btn;
+    background-color: transparent;
+    border: 2px solid $color-light-accent;
+    color: $color-light-text;
+
+    &:hover {
+        background-color: $color-light-accent;
+        color: white;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        border-color: $color-dark-accent;
+        color: $color-dark-text;
+    }
+}
+
+.evaluation-card {
+    background-color: color.adjust($color-light-accent, $alpha: -0.90);
+    border-left: 5px solid $color-light-accent;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0 4px 4px 0;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: color.adjust($color-dark-accent, $alpha: -0.95);
+        border-left-color: $color-dark-accent;
+    }
+}

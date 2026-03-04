@@ -2,11 +2,76 @@
 
 // Färg för ljust tema
 $color-light-bg: #FFEDFA;
-$color-light-text: #3a1b28;
+$color-light-text: #482131;
 $color-light-accent: #FFB8E0;
 
 // Färg för mörkt tema
-$color-dark-bg: #3a1b28;
+$color-dark-bg: #482131;
 $color-dark-text: #FFEDFA;
 $color-dark-accent: #EC7FA9;
 
+// Mixin med if/else
+@mixin theme-setup($theme) {
+    @if $theme == "dark" {
+        background-color: $color-dark-bg;
+        color: $color-dark-text;
+    } @else {
+        background-color: $color-light-bg;
+        color: $color-light-text;
+    }
+}
+
+// Global styling
+body {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.1;
+    font-weight: 200;
+
+    @include theme-setup("light");
+
+    @media (prefers-color-scheme: dark) {
+        @include theme-setup("dark");
+    }
+}
+
+// global styling för rubriker
+h1, h2, h3 {
+    color: $color-dark-bg;
+    font-weight: 200;
+
+    @media (prefers-color-scheme: dark) {
+        color: $color-light-bg;
+    }
+}
+
+a {
+    color: $color-dark-bg;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        color: color.scale($color-light-accent, $lightness: 20%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: $color-dark-accent;
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: $color-light-text;
+    font-weight: 100;
+
+    @media (prefers-color-scheme: dark) {
+        color: $color-dark-text;
+    }
+}
+
+.logo {
+    a{
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+}
