@@ -1,18 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/scss/main.scss">
-    <title>lab3-sass</title>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to lab3-sass</h1>
-    </header>
 
-    <main>
-      <p>This is the main content area.</p>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/scss/main.scss">
+  <title>lab3-sass</title>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">SASS-LAB</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#index">Hem</a></li>
+        <li><a href="#sass">SASS</a></li>
+        <li><a href="#">Animering</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Om oss</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Välkommen till min SASS-laboration</h1>
+      <p>Det här är en sida för min SASS-laboration.</p>
+    <a href="sass.html" class="btn-primary">Läs mer här</a>
+    </div>
+    </section>
+
+    <section class="gallery container">
+      <h2>Mina bilder</h2>
+      <div class="image-grid">
+        <img src="image1.jpg" alt="Bild 1">
+        <img src="image2.jpg" alt="Bild 2">
+        <img src="image3.jpg" alt="Bild 3">
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>2026 SASS-Laboration</p>
+    </div>
+</footer>
+
+</body>
+
 </html>
