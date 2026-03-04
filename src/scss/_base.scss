@@ -3,12 +3,12 @@
 // Färg för ljust tema
 $color-light-bg: #FFEDFA;
 $color-light-text: #482131;
-$color-light-accent: #FFB8E0;
+$color-light-accent: #e6a0c9;
 
 // Färg för mörkt tema
 $color-dark-bg: #482131;
 $color-dark-text: #FFEDFA;
-$color-dark-accent: #EC7FA9;
+$color-dark-accent: #ab798b;
 
 @mixin dark-mode {
     @media (prefers-color-scheme: dark) {
