@@ -23,7 +23,7 @@
         background-color: color.scale($color-light-accent, $lightness: -15%);
     }
 
-    @media (prefers-color-scheme: dark) {
+    @include dark-mode {
         background-color: $color-dark-accent;
         color: $color-dark-text;
 
@@ -44,7 +44,7 @@
         color: white;
     }
 
-    @media (prefers-color-scheme: dark) {
+    @include dark-mode {
         border-color: $color-dark-accent;
         color: $color-dark-text;
     }
@@ -57,7 +57,7 @@
     margin-bottom: 2rem;
     border-radius: 0 4px 4px 0;
 
-    @media (prefers-color-scheme: dark) {
+    @include dark-mode {
         background-color: color.adjust($color-dark-accent, $alpha: -0.95);
         border-left-color: $color-dark-accent;
     }

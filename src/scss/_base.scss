@@ -10,6 +10,12 @@ $color-dark-bg: #482131;
 $color-dark-text: #FFEDFA;
 $color-dark-accent: #EC7FA9;
 
+@mixin dark-mode {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}
+
 // Mixin med if/else
 @mixin theme-setup($theme) {
     @if $theme == "dark" {
@@ -21,6 +27,12 @@ $color-dark-accent: #EC7FA9;
     }
 }
 
+@mixin dark-mode {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}
+
 // Global styling
 body {
     font-family: "Raleway", sans-serif;
@@ -29,7 +41,7 @@ body {
 
     @include theme-setup("light");
 
-    @media (prefers-color-scheme: dark) {
+    @include dark-mode {
         @include theme-setup("dark");
     }
 }
@@ -39,7 +51,7 @@ h1, h2, h3 {
     color: $color-dark-bg;
     font-weight: 200;
 
-    @media (prefers-color-scheme: dark) {
+    @include dark-mode {
         color: $color-light-bg;
     }
 }
@@ -53,7 +65,7 @@ a {
         color: color.scale($color-light-accent, $lightness: 20%);
     }
 
-    @media (prefers-color-scheme: dark) {
+    @include dark-mode {
         color: $color-dark-accent;
     }
 }
@@ -64,7 +76,7 @@ p {
     color: $color-light-text;
     font-weight: 100;
 
-    @media (prefers-color-scheme: dark) {
+    @include dark-mode {
         color: $color-dark-text;
     }
 }

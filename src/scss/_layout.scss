@@ -16,7 +16,7 @@ section {
     background-color: color.scale($color-light-bg, $lightness: 20%);
     border-bottom: 1px solid $color-light-accent;
 
-    @media (prefers-color-scheme: dark) {
+    @include dark-mode {
         background-color: $color-dark-bg;
         border-bottom-color: $color-dark-accent;
     }
