@@ -6,37 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/scss/main.scss">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>lab3-sass</title>
 </head>
+
 <body>
 
   <header class="main-header">
     <div class="container">
       <div class="logo"><a href="index">SASS-LAB</a></div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index" class="active">Hem</a></li>
-        <li><a href="sass">SASS</a></li>
-        <li><a href="#">Länk</a></li>
-        <li><a href="#">Länk</a></li>
-        <li><a href="#">Länk</a></li>
-      </ul>
-    </nav>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index">Hem</a></li>
+          <li><a href="sass">SASS</a></li>
+          <li><a href="animation" class="active">Animation</a></li>
+          <li><a href="#">Länk</a></li>
+          <li><a href="#">Länk</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
+    <article>
+      <h1 class="animated-title">Animation</h1>
+    </article>
 
+    <div class="floating-dot"></div>
+
+    <div class="drawing-line"></div>
+
+    <section class="interaction-section container">
+      <h2>Klicka på knappen för att studsa Igor</h2>
+
+      <div class="animation-wrapper">
+        <img src="/images/igorbaby.jpg" id="bounce-img" class="bounce-target" alt="Liten katt under gungstol"
+          height="300" width="300">
+      </div>
+      <button id="bounce-btn" class="btn-primary">Studsa!</button>
+
+    </section>
   </main>
+
 
   <footer class="main-footer">
     <div class="container">
       <p>2026 SASS-Laboration</p>
     </div>
-</footer>
-
+  </footer>
+  <script src="src/js/main.js"></script>
 </body>
 
 </html>
