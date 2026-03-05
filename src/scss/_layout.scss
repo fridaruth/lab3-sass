@@ -1,6 +1,10 @@
 @use "sass:color";
 @use "base" as *;
 
+main {
+    flex: 1;
+}
+
 .container {
     max-width: 1000px;
     padding: 0 2rem;
@@ -72,5 +76,17 @@ section {
 article {
     h1 {
         margin: 2rem;
+    }
+}
+
+.main-footer {
+    width: 100%;
+    padding: 2rem auto;
+    margin-top: 4rem;
+    text-align: center;
+
+    @include dark-mode {
+        background-color: $color-dark-bg;
+        color: $color-dark-text;
     }
 }

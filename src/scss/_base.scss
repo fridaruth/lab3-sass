@@ -35,6 +35,9 @@ $color-dark-accent: #ab798b;
 
 // Global styling
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: "Raleway", sans-serif;
     line-height: 1.1;
     font-weight: 200;

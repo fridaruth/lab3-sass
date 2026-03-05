@@ -18,9 +18,11 @@
     @extend .btn;
     background-color: $color-light-accent;
     color: $color-light-text;
+      transition: width 1s;
 
     &:hover {
         background-color: color.scale($color-light-accent, $lightness: -15%);
+        width: 200px;
     }
 
     @include dark-mode {
