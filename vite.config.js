@@ -26,6 +26,7 @@ plugins: [
             webp: {
                 quality: 80,
             },
+            svg: false,
         }),
     ],
 })
