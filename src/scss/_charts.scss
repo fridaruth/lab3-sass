@@ -1,0 +1,16 @@
+@use "sass:color";
+@use "base" as *;
+
+.chart-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background-color: rgba(223,185,201, 0.1);
+    padding: 3rem;
+    border-radius: 2%;
+
+        @include dark-mode {
+        background-color: rgba(225, 199, 210, 0.8);
+        color: $color-dark-text;
+    }
+}
+
