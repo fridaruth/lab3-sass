@@ -51,6 +51,15 @@ function renderCoursesChart(data) {
                 borderWidth: 2,
                 borderColor: "#FFFFFF"
             }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
         }
     });
 };
@@ -75,6 +84,10 @@ function renderProgramsChart(data) {
                 data: topPrograms.map(p => p.applicantsTotal),
                 backgroundColor: ["#74354f", "#974567", "#b45b7f", "#c47e9b", "#d4a1b6"]
             }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
         }
     });
 }
