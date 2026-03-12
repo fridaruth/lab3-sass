@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/scss/main.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>lab3-sass</title>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <div class="logo"><a href="index">SASS-LAB</a></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index">Hem</a></li>
+          <li><a href="sass">SASS</a></li>
+          <li><a href="animation">Animation</a></li>
+          <li><a href="diagram" class="active">Diagram</a></li>
+          <li><a href="karta">Karta</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1>Antagningsstatistik HT2025</h1>
+
+      <div class="chart-container">
+        <h2>Topp 6 mest sökta kurser</h2>
+        <canvas id="coursesChart" width="400" height="300"></canvas>
+      </div>
+
+      <div class="chart-container">
+        <h2>Topp 5 mest sökta program</h2>
+        <canvas id="programsChart" width="400" height="400"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/js/charts.js"></script>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>2026 SASS-Laboration</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
