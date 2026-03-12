@@ -6,38 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/scss/main.scss">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <title>lab3-sass</title>
 </head>
+
 <body>
 
   <header class="main-header">
     <div class="container">
       <div class="logo"><a href="index">SASS-LAB</a></div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index">Hem</a></li>
-        <li><a href="sass">SASS</a></li>
-        <li><a href="animation">Animation</a></li>
-        <li><a href="diagram">Diagram</a></li>
-        <li><a href="karta" class="active">Karta</a></li>
-      </ul>
-    </nav>
+
+      <input type="checkbox" id="toggle-nav" class="toggle-nav">
+      <label for="toggle-nav" class="toggle-nav-label">
+        <span></span></label>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index">Hem</a></li>
+          <li><a href="sass">SASS</a></li>
+          <li><a href="animation">Animation</a></li>
+          <li><a href="diagram">Diagram</a></li>
+          <li><a href="karta" class="active">Karta</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main>
+    <section class="container">
+      <h1>Sök på karta</h1>
 
+      <form id="search-form" class="search-form">
+        <input type="text" id="search-input" placeholder="Skriv en plats (t.ex. Stockholm eller London)..." required>
+        <button type="submit" class="btn-primary">Sök plats</button>
+      </form>
+
+      <div id="map" style="height: 500px; margin-top: 2rem; border-radius: 8px;"></div>
+    </section>
   </main>
 
-  <script type="module" src="/src/js/charts.js"></script>
+  <script type="module" src="/src/js/map.js"></script>
 
   <footer class="main-footer">
     <div class="container">
-      <p>2026 SASS-Laboration</p>
+        <p>2026 SASS-Laboration | <a href="/jsdoc/index.html" target="_blank">JSDoc Dokumentation</a></p>
     </div>
-</footer>
+  </footer>
 
 </body>
 

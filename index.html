@@ -6,24 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/scss/main.scss">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>lab3-sass</title>
 </head>
+
 <body>
 
   <header class="main-header">
     <div class="container">
       <div class="logo"><a href="index">SASS-LAB</a></div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index" class="active">Hem</a></li>
-        <li><a href="sass">SASS</a></li>
-        <li><a href="animation">Animation</a></li>
-        <li><a href="diagram">Diagram</a></li>
-        <li><a href="karta">Karta</a></li>
-      </ul>
-    </nav>
+
+      <input type="checkbox" id="toggle-nav" class="toggle-nav">
+      <label for="toggle-nav" class="toggle-nav-label">
+        <span></span></label>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index" class="active">Hem</a></li>
+          <li><a href="sass">SASS</a></li>
+          <li><a href="animation">Animation</a></li>
+          <li><a href="diagram">Diagram</a></li>
+          <li><a href="karta">Karta</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -31,29 +37,25 @@
     <section class="hero">
       <div class="container">
         <h1>Välkommen till min SASS-laboration</h1>
-      <p>Det här är en sida för min SASS-laboration.</p>
-    <a href="sass.html" class="btn-primary">Läs mer här</a>
-    </div>
+        <p>Det här är en sida för min SASS-laboration.</p>
+        <a href="sass.html" class="btn-primary">Läs mer här</a>
+      </div>
     </section>
 
     <section>
       <h2>Mina bilder</h2>
-    <div class="gallery-container">
-        <img src="/images/igorbaby.jpg" alt="Liten katt under gungstol"
-        height="300"
-        width="300">
-        <img src="/images/igoroldie.jpg" alt="Gammal katt under stol"
-        height="300"
-        width="300">
+      <div class="gallery-container">
+        <img src="/images/igorbaby.jpg" alt="Liten katt under gungstol" height="300" width="300">
+        <img src="/images/igoroldie.jpg" alt="Gammal katt under stol" height="300" width="300">
       </div>
-      </section>
+    </section>
   </main>
 
   <footer class="main-footer">
     <div class="container">
-      <p>2026 SASS-Laboration</p>
+      <p>2026 SASS-Laboration | <a href="/jsdoc/index.html" target="_blank">JSDoc Dokumentation</a></p>
     </div>
-</footer>
+  </footer>
 
 </body>
 
