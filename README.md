@@ -1,6 +1,6 @@
 # Laboration 3 + 4 + 5 Sass, Animation, Diagram och Kartor
 
-## 🔗 https://lab3sass.netlify.app/
+## 🔗 https://sass-lab.onrender.com/
 * Detta projekt är en del av kursen Frontend-baserad webbutveckling.
 
 ---
