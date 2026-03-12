@@ -16,6 +16,7 @@ export default defineConfig({
     },
 plugins: [
         ViteImageOptimizer({
+            exclude: [/\bjsdoc\b/],
             jpg: {
                 quality: 80,
             },
