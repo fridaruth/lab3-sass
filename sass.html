@@ -6,67 +6,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/scss/main.scss">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>lab3-sass</title>
 </head>
+
 <body>
 
   <header class="main-header">
     <div class="container">
       <div class="logo"><a href="index">SASS-LAB</a></div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index">Hem</a></li>
-        <li><a href="sass" class="active">SASS</a></li>
-        <li><a href="animation">Animation</a></li>
-        <li><a href="#">Länk</a></li>
-        <li><a href="#">Länk</a></li>
-      </ul>
-    </nav>
+
+      <input type="checkbox" id="toggle-nav" class="toggle-nav">
+      <label for="toggle-nav" class="toggle-nav-label">
+        <span></span></label>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index">Hem</a></li>
+          <li><a href="sass" class="active">SASS</a></li>
+          <li><a href="animation">Animation</a></li>
+          <li><a href="diagram">Diagram</a></li>
+          <li><a href="karta">Karta</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-    <main class="container">
-        <article>
-            <h1>Utvärdering av SASS</h1>
-            
-            <section class="evaluation-card">
-                <h2>Komma igång</h2>
-                <p>Att börja arbeta med Sass kändes initialt lite förvirrande. 
-                  Jag var osäker på hur jag skulle strukturera mina filer och använda de olika funktionerna i Sass. 
-                  Men efter att ha läst dokumentationen och följt några tutorials kände jag mig mer bekväm.</p>
-            </section>
+  <main class="container">
+    <article>
+      <h1>Utvärdering av SASS</h1>
 
-            <section class="evaluation-card">
-                <h2>Fördelar</h2>
-                <p>Sass har många fördelar, inklusive möjligheten att använda variabler, mixins och nesting. 
-                  Det borde göra det lättare att organisera och underhålla CSS-koden, särskilt i större projekt. 
-                  Jag uppskattar också möjligheten att dela upp CSS i flera filer, det känns lättare att hantera.</p>
-            </section>
+      <section class="evaluation-card">
+        <h2>Komma igång</h2>
+        <p>Att börja arbeta med Sass kändes initialt lite förvirrande.
+          Jag var osäker på hur jag skulle strukturera mina filer och använda de olika funktionerna i Sass.
+          Men efter att ha läst dokumentationen och följt några tutorials kände jag mig mer bekväm.</p>
+      </section>
 
-            <section class="evaluation-card">
-                <h2>Nackdelar</h2>
-                <p>En nackdel med Sass är att det kräver en kompilering innan det kan användas i webbläsaren, 
-                  vilket kan lägga till extra steg i utvecklingsprocessen. 
-                  Dessutom kan det vara svårt att felsöka eftersom det inte alltid är tydligt var problemet ligger i Sass-filerna.</p>
-            </section>
+      <section class="evaluation-card">
+        <h2>Fördelar</h2>
+        <p>Sass har många fördelar, inklusive möjligheten att använda variabler, mixins och nesting.
+          Det borde göra det lättare att organisera och underhålla CSS-koden, särskilt i större projekt.
+          Jag uppskattar också möjligheten att dela upp CSS i flera filer, det känns lättare att hantera.</p>
+      </section>
 
-            <section class="evaluation-card">
-                <h2>Slutsats</h2>
-                <p>Sammanfattningsvis tycker jag att Sass är ett väldigt användbart verktyg. 
-                  Det underlättar verkligen att kunna dela upp CSS i flera filer och använda variabler och mixins för att hålla koden renare.
-                  Jag ser fram emot att använda Sass mer i framtida projekt.</p>
-            </section>
-        </article>
-    </main>
+      <section class="evaluation-card">
+        <h2>Nackdelar</h2>
+        <p>En nackdel med Sass är att det kräver en kompilering innan det kan användas i webbläsaren,
+          vilket kan lägga till extra steg i utvecklingsprocessen.
+          Dessutom kan det vara svårt att felsöka eftersom det inte alltid är tydligt var problemet ligger i
+          Sass-filerna.</p>
+      </section>
 
-    <footer class="main-footer">
+      <section class="evaluation-card">
+        <h2>Slutsats</h2>
+        <p>Sammanfattningsvis tycker jag att Sass är ett väldigt användbart verktyg.
+          Det underlättar verkligen att kunna dela upp CSS i flera filer och använda variabler och mixins för att hålla
+          koden renare.
+          Jag ser fram emot att använda Sass mer i framtida projekt.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="main-footer">
     <div class="container">
-      <p>2026 SASS-Laboration</p>
+        <p>2026 SASS-Laboration | <a href="/jsdoc/index.html" target="_blank">JSDoc Dokumentation</a></p>
     </div>
-</footer>
-<script type="module" src="/src/js/main.js"></script>
+  </footer>
+
 </body>
 
 </html>
